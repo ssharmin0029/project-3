@@ -19,7 +19,6 @@ export default function Portfolio({ }) {
                     .then(res => {
                         console.log(res.data)
                         setUserCoins(res.data)
-                        //deconstruct res.data
                     })
                     .catch(error => console.log(error))
                 setCoinGecko(res.data)
