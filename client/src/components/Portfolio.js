@@ -53,6 +53,7 @@ export default function Portfolio({}) {
         <thead>
           <tr>
             <th scope="col">#</th>
+            <th scope="col">Image</th>
             <th scope="col">Coin</th>
             <th scope="col">Price</th>
             <th scope="col">Holdings</th>
@@ -65,7 +66,10 @@ export default function Portfolio({}) {
               <tr>
                 <th scope="row">{i+1}</th>
                 <td>
-                  <img src={data.image} /> {data.asset}
+                  <img className="logos" src={data.image} /> 
+                </td>
+                <td>
+                  {data.asset}
                 </td>
                 <td>${data.price}</td>
                 <td>

@@ -84,7 +84,7 @@ export default function AddAsset() {
                 <div className="form-group row">
                     <label htmlFor="asset" className="col-sm-2 col-form-label">Asset Name</label>
                     <div className="col-sm-10">
-                    <input onChange={handleInputChange} className="form-control" name="asset" placeholder=".5344"/>
+                    <input onChange={handleInputChange} className="form-control" name="asset" placeholder="Bitcoin"/>
                      </div>
                 </div>
                 <div class="form-group row">

@@ -66,9 +66,7 @@ const Chart = () => {
 
     return (
         <div>
-            <Doughnut 
-                // height={200}
-                // width={200}
+            <Doughnut
                 data={{
                     labels: assetNames,
                     datasets: [{
@@ -101,7 +99,7 @@ const Chart = () => {
                 }}
             />
 
-            <Line 
+            {/* <Line 
                 data = {{
                   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', "Sep", 'Oct', 'Nov', 'Dec'],
                   datasets: [{
@@ -126,7 +124,7 @@ const Chart = () => {
                         }
                     }
                 }}
-            />
+            /> */}
 
         </div>
     )

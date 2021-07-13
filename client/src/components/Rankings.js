@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { indexOf } from "lodash";
+import './rankings.css';
 
 function Rankings() {
   // const [search, setSearch] = useState('')
@@ -52,7 +53,7 @@ function Rankings() {
               <tr>
                 <th scope="row">{i+1}</th>
                 <td>
-                  <img src={data.image} />
+                  <img className="logos" src={data.image} />
                 </td>
                 <td>{data.name}</td>
                 <td>{data.symbol}</td>
