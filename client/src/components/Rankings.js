@@ -17,10 +17,10 @@ function Rankings() {
       .catch((error) => console.log(error));
   }, []);
 
-  console.log(setCoin)
+  console.log(setCoin);
 
   return (
-    <div className="market-cap-rankigns">
+    <div className="market-cap-rankings">
       <table class="table">
         <thead>
           <tr>
@@ -31,7 +31,6 @@ function Rankings() {
             <th scope="col">Price</th>
             <th scope="col">Market Cap</th>
             <th scope="col">Volume</th>
-
           </tr>
         </thead>
         {coin.map((data, i) => {

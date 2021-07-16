@@ -132,7 +132,6 @@ tr {
   float: left;
 }
 
-
 .transaction {
   height: 100vh;
   width: 100%;
@@ -229,8 +228,8 @@ tr {
   width: 1000px;
 }
 
-.market-cap-rankigns {
-  width:75%;
+.market-cap-rankings {
+  width: 75%;
   border-radius: 30px;
   border: 1px solid black;
   margin: auto;
