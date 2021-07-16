@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router";
+import { Redirect } from "react-router-dom";
 
 export default function Portfolio() {
   const [coinGecko, setCoinGecko] = useState({});
   const history = useHistory();
   const [userCoins, setUserCoins] = useState([]);
   const [fullUserData, setFullUserData] = useState([]);
+  const data = window.sessionStorage.getItem('isLoggedIn')
+
 
   useEffect(() => {
     axios
@@ -48,6 +51,7 @@ export default function Portfolio() {
     }
   }, [userCoins]);
 
+
   const addTransaction = () => {
     history.push("/home");
   };
@@ -67,11 +71,15 @@ export default function Portfolio() {
   console.log(assetValues);
 
   return (
-    <div className="ranking-page">
+    <div>
+      {data && 
+      
+      <div className="ranking-page">
       <div class="card text-center">
         <div class="card-body value-banner">
           <h4>Total Portfolio Value</h4>
           <p class="card-text port-val">${totalSum}</p>
+
           <a
             href="#"
             class="btn btn-outline-dark btn-port-val"
@@ -112,6 +120,10 @@ export default function Portfolio() {
           );
         })}
       </table>
+      </div>
+    }
+    {!data && <Redirect to = '/login'/> }
     </div>
+    
   );
 }

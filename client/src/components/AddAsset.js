@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import API from "../Utils/API";
 import axios from "axios";
+import { Redirect } from "react-router-dom";
 
 export default function AddAsset() {
   const [symbolList, setSymbolList] = useState([]);
   const [formInputs, setFormInputs] = useState({});
+  const data = window.sessionStorage.getItem('isLoggedIn')
 
   useEffect(() => {
     axios
@@ -58,6 +60,8 @@ export default function AddAsset() {
   };
 
   return (
+    <div>
+      {data && 
     <div className="container">
       <form className="asset-content">
         <h5 className="asset-title">Asset Transactions</h5>
@@ -165,6 +169,9 @@ export default function AddAsset() {
           </div>
         </div>
       </form>
+    </div> }
+    {!data && <Redirect to = '/login' /> }
+
     </div>
   );
 }

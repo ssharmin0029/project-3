@@ -25,8 +25,8 @@ export default function Nav() {
               My Coin
             </a>
           </li>
-
-          <li className="nav-item">
+        {data &&  
+        <li className="nav-item">
             <NavLink
               exact
               to="/portfolio"
@@ -35,7 +35,8 @@ export default function Nav() {
             >
               My Portfolio
             </NavLink>
-          </li>
+          </li>}
+         
 
           <li className="nav-item">
             <NavLink
