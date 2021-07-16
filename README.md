@@ -21,11 +21,11 @@ As a cryptocurrency investor and trader, I want to be able to track all my crypt
 
 ### Demo-Screenshots of the App
 
-![alt text](public/images/final-page-1.png)
-![alt text](public/images/final-page-2.png)
-![alt text](public/images/final-page-3.png)
-![alt text](public/images/final-page-4.png)
-![alt text](public/images/final-page-5.png)
+![alt text](public/images/final-page-1)
+![alt text](public/images/final-page-2)
+![alt text](public/images/final-page-3)
+![alt text](public/images/final-page-4)
+![alt text](public/images/final-page-5)
 
 ### Deployed Application URL
 
